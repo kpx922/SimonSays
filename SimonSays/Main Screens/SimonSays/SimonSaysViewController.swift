@@ -161,13 +161,12 @@ extension SimonSaysViewController {
     }
     
     fileprivate func checkAnswer(_ buttonIndex: ButtonIndex) {
-        if answer[current] == buttonIndex.rawValue {
-            current += 1
-
-        } else {
+        if answer[current] != buttonIndex.rawValue {
             gameOver()
             return
         }
+
+        current += 1
 
         if current == answer.count {
             score += 1
@@ -185,31 +184,27 @@ extension SimonSaysViewController {
         present(stateViewContriller, animated: false)
     }
     
+    fileprivate func tapOn(_ button: SSButton, _ buttonIndex: ButtonIndex) {
+        button.glow()
+        
+        if !button.isSelected {
+            checkAnswer(buttonIndex)
+        }
+    }
+    
     @objc fileprivate func handleTapOn(button: UIButton) {
         switch button {
         case simonSaysView.yellowButton:
-            simonSaysView.yellowButton.glow()
-            if !button.isSelected {
-                checkAnswer(ButtonIndex.Yellow)
-            }
+            tapOn(simonSaysView.yellowButton, .Yellow)
 
         case simonSaysView.redButton:
-            simonSaysView.redButton.glow()
-            if !button.isSelected {
-                checkAnswer(ButtonIndex.Red)
-            }
+            tapOn(simonSaysView.redButton, .Red)
 
         case simonSaysView.greenButton:
-            simonSaysView.greenButton.glow()
-            if !button.isSelected {
-                checkAnswer(ButtonIndex.Green)
-            }
+            tapOn(simonSaysView.greenButton, .Green)
 
         case simonSaysView.blueButton:
-            simonSaysView.blueButton.glow()
-            if !button.isSelected {
-                checkAnswer(ButtonIndex.Blue)
-            }
+            tapOn(simonSaysView.blueButton, .Blue)
             
         default:
             print("Error")
