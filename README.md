@@ -52,6 +52,7 @@ Clear and straightforward design to layout all labels and buttons.
 - Feature
   - Implement GameCenter to better recording player's scores and compete with another user.
   - Award user by some visual/sound effects when beat highscore.
+  - Retain high score even the app closed.
   
 - Technical
   - Improve random generated sequence
