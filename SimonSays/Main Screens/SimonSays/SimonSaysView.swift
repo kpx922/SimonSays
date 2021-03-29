@@ -9,9 +9,9 @@ import UIKit
 
 class SimonSaysView: UIView {
     
-    lazy var highestScoreLabel: UILabel = {
+    lazy var highScoreLabel: UILabel = {
         let label = UILabel()
-        label.text = "Highest Score: -"
+        label.text = "High Score: -"
         label.font = UIFont(name: Font.Arcade, size: 14)
         label.textColor = .black
         label.textAlignment = .right
@@ -54,9 +54,9 @@ class SimonSaysView: UIView {
         let buttonWidth  = (Screen.Width - (padding * 3)) / 2
         let buttonHeight = Screen.Height * 0.25
         
-        addSubviews(highestScoreLabel, scoreLabel, greenButton, blueButton, yellowButton, redButton)
+        addSubviews(highScoreLabel, scoreLabel, greenButton, blueButton, yellowButton, redButton)
         
-        _ = highestScoreLabel.anchor(top: safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: trailingAnchor, padding: .init(top: padding, left: 0, bottom: 0, right: padding), size: .init(width: 0, height: 24))
+        _ = highScoreLabel.anchor(top: safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: trailingAnchor, padding: .init(top: padding, left: 0, bottom: 0, right: padding), size: .init(width: 0, height: 24))
         
         _ = greenButton.anchor(top: nil, leading: leadingAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, trailing: nil, padding: .init(top: 0, left: padding, bottom: padding * 4, right: 0), size: .init(width: buttonWidth, height: buttonHeight))
         
