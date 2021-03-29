@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		D86B02EE261163B200FD35AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B02ED261163B200FD35AE /* AppDelegate.swift */; };
 		D86B02F0261163B200FD35AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B02EF261163B200FD35AE /* SceneDelegate.swift */; };
-		D86B02F2261163B200FD35AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B02F1261163B200FD35AE /* ViewController.swift */; };
+		D86B02F2261163B200FD35AE /* SimonSaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B02F1261163B200FD35AE /* SimonSaysViewController.swift */; };
 		D86B02F5261163B200FD35AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86B02F3261163B200FD35AE /* Main.storyboard */; };
 		D86B02F7261163C600FD35AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B02F6261163C600FD35AE /* Assets.xcassets */; };
 		D86B02FA261163C600FD35AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86B02F8261163C600FD35AE /* LaunchScreen.storyboard */; };
+		D86B030C261165C300FD35AE /* SimonSaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B030B261165C300FD35AE /* SimonSaysView.swift */; };
+		D86B0312261167A500FD35AE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B0311261167A500FD35AE /* UIView+Ext.swift */; };
+		D86B03162611688100FD35AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B03152611688100FD35AE /* Constants.swift */; };
+		D86B031926117F4700FD35AE /* PressStart2P-vaV7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D86B031826117F4700FD35AE /* PressStart2P-vaV7.ttf */; };
+		D86B031F261183C000FD35AE /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B031E261183C000FD35AE /* StateViewController.swift */; };
+		D86B03242611940300FD35AE /* SSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B03232611940300FD35AE /* SSButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D86B02EA261163B200FD35AE /* SimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86B02ED261163B200FD35AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86B02EF261163B200FD35AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D86B02F1261163B200FD35AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D86B02F1261163B200FD35AE /* SimonSaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysViewController.swift; sourceTree = "<group>"; };
 		D86B02F4261163B200FD35AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D86B02F6261163C600FD35AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86B02F9261163C600FD35AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86B02FB261163C600FD35AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86B030B261165C300FD35AE /* SimonSaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysView.swift; sourceTree = "<group>"; };
+		D86B0311261167A500FD35AE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		D86B03152611688100FD35AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D86B031826117F4700FD35AE /* PressStart2P-vaV7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PressStart2P-vaV7.ttf"; sourceTree = "<group>"; };
+		D86B031E261183C000FD35AE /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		D86B03232611940300FD35AE /* SSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +68,91 @@
 		D86B02EC261163B200FD35AE /* SimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				D86B0321261193C100FD35AE /* CustomView */,
+				D86B03142611687100FD35AE /* Utility */,
+				D86B03102611679600FD35AE /* Extension */,
+				D86B0302261164D400FD35AE /* Main Screens */,
+				D86B0303261164E200FD35AE /* Support */,
+				D86B031C2611805300FD35AE /* Resources */,
+				D86B02FB261163C600FD35AE /* Info.plist */,
+			);
+			path = SimonSays;
+			sourceTree = "<group>";
+		};
+		D86B0302261164D400FD35AE /* Main Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D86B032A2611DE7500FD35AE /* SimonSays */,
+			);
+			path = "Main Screens";
+			sourceTree = "<group>";
+		};
+		D86B0303261164E200FD35AE /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				D86B02ED261163B200FD35AE /* AppDelegate.swift */,
 				D86B02EF261163B200FD35AE /* SceneDelegate.swift */,
-				D86B02F1261163B200FD35AE /* ViewController.swift */,
 				D86B02F3261163B200FD35AE /* Main.storyboard */,
 				D86B02F6261163C600FD35AE /* Assets.xcassets */,
 				D86B02F8261163C600FD35AE /* LaunchScreen.storyboard */,
-				D86B02FB261163C600FD35AE /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D86B03102611679600FD35AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D86B0311261167A500FD35AE /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D86B03142611687100FD35AE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D86B03152611688100FD35AE /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D86B031C2611805300FD35AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D86B031826117F4700FD35AE /* PressStart2P-vaV7.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D86B0321261193C100FD35AE /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D86B03292611DE5F00FD35AE /* ViewController */,
+				D86B0322261193D600FD35AE /* Button */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		D86B0322261193D600FD35AE /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				D86B03232611940300FD35AE /* SSButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		D86B03292611DE5F00FD35AE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D86B031E261183C000FD35AE /* StateViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		D86B032A2611DE7500FD35AE /* SimonSays */ = {
+			isa = PBXGroup;
+			children = (
+				D86B030B261165C300FD35AE /* SimonSaysView.swift */,
+				D86B02F1261163B200FD35AE /* SimonSaysViewController.swift */,
 			);
 			path = SimonSays;
 			sourceTree = "<group>";
@@ -127,6 +217,7 @@
 				D86B02FA261163C600FD35AE /* LaunchScreen.storyboard in Resources */,
 				D86B02F7261163C600FD35AE /* Assets.xcassets in Resources */,
 				D86B02F5261163B200FD35AE /* Main.storyboard in Resources */,
+				D86B031926117F4700FD35AE /* PressStart2P-vaV7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D86B02F2261163B200FD35AE /* ViewController.swift in Sources */,
+				D86B02F2261163B200FD35AE /* SimonSaysViewController.swift in Sources */,
 				D86B02EE261163B200FD35AE /* AppDelegate.swift in Sources */,
+				D86B0312261167A500FD35AE /* UIView+Ext.swift in Sources */,
+				D86B03242611940300FD35AE /* SSButton.swift in Sources */,
 				D86B02F0261163B200FD35AE /* SceneDelegate.swift in Sources */,
+				D86B030C261165C300FD35AE /* SimonSaysView.swift in Sources */,
+				D86B03162611688100FD35AE /* Constants.swift in Sources */,
+				D86B031F261183C000FD35AE /* StateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
