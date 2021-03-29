@@ -14,7 +14,7 @@ class SimonSaysViewController: UIViewController {
         }
     }
     
-    fileprivate var hightestScore = 0
+    fileprivate var highScore = 0
     fileprivate var current = 0
     fileprivate var answer = [Int]()
 
@@ -156,8 +156,8 @@ extension SimonSaysViewController {
     fileprivate func updateScore(_ score: Int) {
         simonSaysView.scoreLabel.text = "\(score)"
         
-        hightestScore = max(score, hightestScore)
-        simonSaysView.highestScoreLabel.text = "Highest Score: \(hightestScore)"
+        highScore = max(score, highScore)
+        simonSaysView.highScoreLabel.text = "High Score: \(highScore)"
     }
     
     fileprivate func checkAnswer(_ buttonIndex: ButtonIndex) {
