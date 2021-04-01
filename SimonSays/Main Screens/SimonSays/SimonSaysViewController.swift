@@ -3,7 +3,7 @@
 //  SimonSays
 //
 //  Created by Shihchiao Chao on 3/28/21.
-//
+
 
 import UIKit
 
@@ -91,6 +91,10 @@ extension SimonSaysViewController {
     }
 
     fileprivate func gameOver() {
+        for buton in buttons {
+            score = 1
+        }
+        
         buttons.forEach({ $0.isUserInteractionEnabled = false })
 
         score = 0
@@ -106,7 +110,7 @@ extension SimonSaysViewController {
     
     fileprivate func simonSays() {
         var delay: TimeInterval = 0
-
+        
         let group = DispatchGroup()
         
         for item in answer {
