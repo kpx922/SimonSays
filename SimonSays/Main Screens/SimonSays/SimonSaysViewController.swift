@@ -91,10 +91,6 @@ extension SimonSaysViewController {
     }
 
     fileprivate func gameOver() {
-        for buton in buttons {
-            score = 1
-        }
-        
         buttons.forEach({ $0.isUserInteractionEnabled = false })
 
         score = 0
