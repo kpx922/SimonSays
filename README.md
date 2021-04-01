@@ -4,6 +4,13 @@ Simon will give the first signal by flashing one of the buttons. The player must
 Simon will repeat the first signal and then add one more. The player must repeat those two signals in the same order. 
 Simon and the player then repeat this process until the player enters the wrong sequence.
 
+## Screenshots
+<img src="previewImages/SimonSays_ScreenShot_Start.png" width=220 align=left>
+<img src="previewImages/SimonSays_ScreenShot_CountdownToStart.png" width=220 align=left>
+<img src="previewImages/SimonSays_ScreenShot_PlayersTurn.png" width=220 align=left>
+<img src="previewImages/SimonSays_ScreenShot_GameOver.png" width=220>
+
+
 ## UI/UX Design
 Clear and straightforward design to layout all labels and buttons.
 
@@ -40,7 +47,6 @@ Clear and straightforward design to layout all labels and buttons.
 ## Testing
   - Manual testing
     - Manual testing during the development
-  
   
   
 ## Improvement
