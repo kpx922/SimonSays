@@ -5,10 +5,10 @@ Simon will repeat the first signal and then add one more. The player must repeat
 Simon and the player then repeat this process until the player enters the wrong sequence.
 
 ## Screenshots
-<img src="previewImages/SimonSays_ScreenShot_Start.png" width=220 align=left>
-<img src="previewImages/SimonSays_ScreenShot_CountdownToStart.png" width=220 align=left>
-<img src="previewImages/SimonSays_ScreenShot_PlayersTurn.png" width=220 align=left>
-<img src="previewImages/SimonSays_ScreenShot_GameOver.png" width=220>
+<img src="previewImages/SimonSays_ScreenShot_Start.png" width=200 align=left>
+<img src="previewImages/SimonSays_ScreenShot_CountdownToStart.png" width=200 align=left>
+<img src="previewImages/SimonSays_ScreenShot_PlayersTurn.png" width=200 align=left>
+<img src="previewImages/SimonSays_ScreenShot_GameOver.png" width=200>
 
 
 ## UI/UX Design
